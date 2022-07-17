@@ -1,0 +1,74 @@
+
+<h2>Employees</h2>
+<div class="row"  >
+  <div class="container">
+    <table class="table" >
+      <thead class="table-dark">
+        <tr class="text-center">
+          <th scope="col">Employee ID</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Salary</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Email</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr appColor class="text-center" *ngFor="let employee of employees" >
+          <td>{{employee.EmployeeId}}</td>
+          <td>{{employee.FirstName}}</td>
+          <td>{{employee.LastName}}</td>
+          <td>{{employee.Salary|currency:'INR'}}</td>
+          <td>{{employee.DOB}}</td>
+          <td>{{employee.Email}}</td>
+          <!-- <td><button class="btn btn-primary" (click)="editEmp()">
+              Edit
+          </button></td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  
+<!-- 
+<div class="row"  style="overflow-x: auto;">
+  <div class="container">
+    
+<table class="table" *ngIf="showEdit">
+  <thead class="table-dark">
+    <tr class="text-center">
+      <th scope="col">Employee ID</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Salary</th>
+      <th scope="col">DOB</th>
+      <th scope="col">Email</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" id="EmployeeId" [(ngModel)]="emp.EmployeeId"/></td>
+      <td><input type="text" id="FirstName" [(ngModel)]="emp.FirstName"/></td>
+      <td><input type="text" id="LastName" [(ngModel)]="emp.LastName"/></td>
+      <td><input type="text" id="Salary" [(ngModel)]="emp.Salary"/></td>
+      <td><input type="text" id="dob" [(ngModel)]="emp.DOB"/></td>
+      <td><input type="text" id="email" [(ngModel)]="emp.Email"/></td>
+      <td><button class="btn btn-warning" (click)="updateEmp()">
+          Update
+      </button></td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div> -->
+
+
+
+<!-- showEdit: {{showEdit}}
+<br>
+Action Property : {{emp.Action}} -->
+
+  
